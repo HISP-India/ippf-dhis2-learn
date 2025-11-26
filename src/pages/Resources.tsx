@@ -35,7 +35,7 @@ const Resources = () => {
         { name: "DHIS2 Tracker Module User Guide", size: "4.5 MB" },
         { name: "Data Visualizer Complete Guide", size: "3.8 MB" },
         { name: "Dashboard Best Practices", size: "2.9 MB" },
-        { name: "Health Information Cycle Framework", size: "2.2 MB" },
+        { name: "CSV Export & Import Guide", size: "2.2 MB" },
       ],
     },
     {

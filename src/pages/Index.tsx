@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import ModuleCard from "@/components/ModuleCard";
 import Header from "@/components/Header";
-import { BookOpen, Users, TrendingUp, Target, Database, BarChart3, Layout, GitBranch, Repeat, Activity } from "lucide-react";
+import { BookOpen, Users, TrendingUp, Target, Database, BarChart3, Layout, GitBranch, Repeat, FileSpreadsheet } from "lucide-react";
 import VideoEmbed from "@/components/VideoEmbed";
 
 const Index = () => {
@@ -51,10 +51,10 @@ const Index = () => {
     },
     {
       number: 6,
-      title: "Health Information Cycle & Data Use",
-      description: "Interpret dashboards, ensure data quality, and drive evidence-based decisions",
-      icon: Activity,
-      duration: "55 min",
+      title: "CSV Export & Import to Global DHIS2",
+      description: "Export data to CSV and import to Global DHIS2 for reporting",
+      icon: FileSpreadsheet,
+      duration: "45 min",
       href: "/modules/6",
     },
   ];
