@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import ModuleCard from "@/components/ModuleCard";
 import Header from "@/components/Header";
 import { BookOpen, Users, TrendingUp, Target, Database, BarChart3, Layout, GitBranch, Repeat, Activity } from "lucide-react";
-import heroImage from "@/assets/hero-training.jpg";
+import VideoEmbed from "@/components/VideoEmbed";
 
 const Index = () => {
   const modules = [
@@ -114,11 +114,12 @@ const Index = () => {
             </div>
             <div className="relative animate-scale-in">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl" />
-              <img
-                src={heroImage}
-                alt="DHIS2 Training Platform"
-                className="relative rounded-2xl shadow-2xl w-full"
-              />
+              <div className="relative">
+                <VideoEmbed 
+                  title="DHIS2 Training Introduction" 
+                  placeholder={true}
+                />
+              </div>
             </div>
           </div>
         </div>
