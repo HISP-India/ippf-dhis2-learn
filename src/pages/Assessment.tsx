@@ -16,7 +16,7 @@ interface Question {
 
 const Assessment = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(Array(12).fill(null));
+  const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(Array(15).fill(null));
   const [showResults, setShowResults] = useState(false);
 
   const questions: Question[] = [
@@ -134,6 +134,36 @@ const Assessment = () => {
         "Data elements can't be used in charts",
       ],
       correctAnswer: 1,
+    },
+    {
+      question: "What are the two main components of RDQA?",
+      options: [
+        "Data collection and data storage",
+        "Data verification and systems assessment",
+        "Training and supervision",
+        "Reporting and feedback",
+      ],
+      correctAnswer: 1,
+    },
+    {
+      question: "A Data Verification Factor (DVF) of 92% indicates:",
+      options: [
+        "Perfect data quality",
+        "Acceptable accuracy",
+        "Potential under-reporting requiring investigation",
+        "The data should be deleted",
+      ],
+      correctAnswer: 2,
+    },
+    {
+      question: "In RDQA systems assessment, what does a score of '3' mean?",
+      options: [
+        "Not functioning or non-existent",
+        "Partially functioning, needs improvement",
+        "Fully functioning and effective",
+        "Not applicable to this site",
+      ],
+      correctAnswer: 2,
     },
   ];
 
