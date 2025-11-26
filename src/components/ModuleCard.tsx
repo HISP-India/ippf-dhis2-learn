@@ -17,34 +17,34 @@ interface ModuleCardProps {
 const ModuleCard = ({ number, title, description, icon: Icon, duration, href, completed }: ModuleCardProps) => {
   return (
     <Link to={href} className="group">
-      <Card className="h-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 border-2 hover:border-primary/50">
-        <CardHeader>
-          <div className="flex items-start justify-between mb-2">
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent">
-              <Icon className="h-6 w-6 text-primary-foreground" />
+      <Card className="h-full transition-all duration-300 hover:shadow-xl hover:shadow-dream/20 hover:-translate-y-2 border-4 border-dream hover:border-primary bg-card">
+        <CardHeader className="relative">
+          <div className="flex items-start justify-between mb-3">
+            <div className="flex items-center justify-center w-16 h-16 rounded-sm bg-primary shadow-strong border-4 border-dream">
+              <Icon className="h-8 w-8 text-primary-foreground" />
             </div>
             {completed && (
-              <Badge variant="default" className="bg-success">
+              <Badge variant="default" className="bg-success font-bold uppercase text-xs border-2 border-success">
                 <CheckCircle2 className="h-3 w-3 mr-1" />
                 Complete
               </Badge>
             )}
           </div>
-          <div className="flex items-center gap-2 mb-2">
-            <Badge variant="outline" className="font-semibold">Module {number}</Badge>
-            <span className="text-xs text-muted-foreground">{duration}</span>
+          <div className="flex items-center gap-3 mb-3">
+            <Badge variant="outline" className="font-bold uppercase text-xs border-2 border-primary text-primary">Module {number}</Badge>
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">{duration}</span>
           </div>
-          <CardTitle className="text-xl font-heading group-hover:text-primary transition-colors">
+          <CardTitle className="text-2xl font-heading font-bold group-hover:text-primary transition-colors leading-tight">
             {title}
           </CardTitle>
-          <CardDescription className="line-clamp-2">
+          <CardDescription className="line-clamp-2 text-base">
             {description}
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="flex items-center text-sm font-medium text-primary group-hover:gap-2 transition-all">
+          <div className="flex items-center text-sm font-bold text-primary group-hover:gap-2 transition-all uppercase tracking-wide">
             Start Learning
-            <ArrowRight className="h-4 w-4 ml-1 group-hover:ml-0 transition-all" />
+            <ArrowRight className="h-5 w-5 ml-1 group-hover:ml-0 transition-all" />
           </div>
         </CardContent>
       </Card>

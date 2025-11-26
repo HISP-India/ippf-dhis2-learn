@@ -8,64 +8,76 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* IPPF Brand Colors - Professional Healthcare LMS */
-    --background: 0 0% 100%;
-    --foreground: 240 10% 15%;
+    /* IPPF Official Brand Colors */
+    --background: 120 8% 86%; /* Platinum */
+    --foreground: 358 31% 19%; /* Dream */
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 15%;
+    --card-foreground: 358 31% 19%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 15%;
+    --popover-foreground: 358 31% 19%;
 
-    /* Primary: Deep Purple/Magenta (IPPF Brand) */
-    --primary: 320 65% 45%;
+    /* Primary: Fire Red - Key CTA color */
+    --primary: 12 96% 46%; /* Fire Red #EB3300 */
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Soft Purple */
-    --secondary: 280 40% 92%;
-    --secondary-foreground: 320 65% 45%;
+    /* Secondary: Crystal (deep purple) */
+    --secondary: 268 46% 20%; /* Crystal */
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted: Light backgrounds */
-    --muted: 280 30% 96%;
-    --muted-foreground: 240 10% 45%;
+    /* Muted: Platinum backgrounds */
+    --muted: 120 8% 86%; /* Platinum */
+    --muted-foreground: 358 31% 19%;
 
-    /* Accent: Vibrant Pink for CTAs */
-    --accent: 330 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent: Pear for highlights */
+    --accent: 66 59% 66%; /* Pear */
+    --accent-foreground: 358 31% 19%;
+
+    /* Coco: Deep teal for headers */
+    --coco: 192 100% 12%;
+    --coco-foreground: 0 0% 100%;
+
+    /* Dream: Dark burgundy */
+    --dream: 358 31% 19%;
+    --dream-foreground: 0 0% 100%;
+
+    /* Meteorite: Light blue */
+    --meteorite: 197 70% 67%;
+    --meteorite-foreground: 358 31% 19%;
 
     /* Success: Module completion */
     --success: 150 60% 45%;
     --success-foreground: 0 0% 100%;
 
-    /* Info: Educational highlights */
-    --info: 210 80% 50%;
-    --info-foreground: 0 0% 100%;
+    /* Info: Meteorite */
+    --info: 197 70% 67%;
+    --info-foreground: 358 31% 19%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 280 20% 88%;
-    --input: 280 20% 88%;
-    --ring: 320 65% 45%;
+    --border: 358 10% 25%;
+    --input: 120 8% 80%;
+    --ring: 12 96% 46%;
 
-    --radius: 0.75rem;
+    --radius: 0.25rem;
     
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(320 65% 45%), hsl(280 70% 55%));
-    --gradient-accent: linear-gradient(135deg, hsl(330 85% 55%), hsl(320 75% 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(280 30% 98%), hsl(0 0% 100%));
+    /* Custom gradients - Bold IPPF style */
+    --gradient-primary: linear-gradient(135deg, hsl(12 96% 46%), hsl(358 31% 19%));
+    --gradient-secondary: linear-gradient(135deg, hsl(192 100% 12%), hsl(268 46% 20%));
+    --gradient-accent: linear-gradient(135deg, hsl(66 59% 66%), hsl(197 70% 67%));
     
-    /* Shadows */
-    --shadow-soft: 0 2px 8px hsla(320 65% 45% / 0.1);
-    --shadow-medium: 0 4px 16px hsla(320 65% 45% / 0.15);
-    --shadow-strong: 0 8px 24px hsla(320 65% 45% / 0.2);
+    /* Shadows - Bold contrast */
+    --shadow-soft: 0 2px 8px hsla(358 31% 19% / 0.1);
+    --shadow-medium: 0 4px 16px hsla(358 31% 19% / 0.2);
+    --shadow-strong: 0 8px 24px hsla(358 31% 19% / 0.3);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --radius: 0.75rem;
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -85,39 +97,48 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 240 15% 8%;
-    --foreground: 0 0% 98%;
+    --background: 192 100% 12%; /* Coco */
+    --foreground: 120 8% 86%;
 
-    --card: 240 12% 12%;
+    --card: 268 46% 20%; /* Crystal */
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 12% 12%;
+    --popover: 268 46% 20%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 320 75% 60%;
+    --primary: 12 96% 46%; /* Fire Red */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 10% 18%;
+    --secondary: 358 31% 19%; /* Dream */
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 10% 18%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 358 31% 25%;
+    --muted-foreground: 120 8% 70%;
 
-    --accent: 330 85% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 66 59% 66%; /* Pear */
+    --accent-foreground: 358 31% 19%;
+
+    --coco: 192 100% 12%;
+    --coco-foreground: 0 0% 100%;
+
+    --dream: 358 31% 19%;
+    --dream-foreground: 0 0% 100%;
+
+    --meteorite: 197 70% 67%;
+    --meteorite-foreground: 358 31% 19%;
 
     --success: 150 55% 50%;
     --success-foreground: 0 0% 100%;
 
-    --info: 210 75% 55%;
-    --info-foreground: 0 0% 100%;
+    --info: 197 70% 67%;
+    --info-foreground: 358 31% 19%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 22%;
-    --input: 240 10% 22%;
-    --ring: 320 75% 60%;
+    --border: 358 31% 30%;
+    --input: 358 31% 25%;
+    --ring: 12 96% 46%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
