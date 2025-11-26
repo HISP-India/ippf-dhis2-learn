@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import ModuleCard from "@/components/ModuleCard";
-import { Database, Repeat, GitBranch, BarChart3, Layout, FileSpreadsheet } from "lucide-react";
+import { Database, Repeat, GitBranch, BarChart3, Layout, FileSpreadsheet, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -54,6 +54,14 @@ const Modules = () => {
       duration: "45 min",
       href: "/modules/6",
     },
+    {
+      number: 7,
+      title: "RDQA: Routine Data Quality Assessment",
+      description: "Master IPPF's RDQA methodology to verify data accuracy, assess systems, and develop improvement action plans",
+      icon: ClipboardCheck,
+      duration: "60 min",
+      href: "/modules/7",
+    },
   ];
 
   return (
@@ -81,7 +89,7 @@ const Modules = () => {
             </div>
             <div className="flex items-center gap-3">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">0/6</div>
+                <div className="text-2xl font-bold text-primary">0/7</div>
                 <div className="text-xs text-muted-foreground">Modules</div>
               </div>
               <Button asChild variant="outline">

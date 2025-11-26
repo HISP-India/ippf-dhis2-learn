@@ -14,7 +14,8 @@ const Resources = () => {
         { name: "Module 3 - Aggregate Data Entry Script", size: "2.1 MB" },
         { name: "Module 4 - Data Visualizer Script", size: "2.5 MB" },
         { name: "Module 5 - Dashboard Creation Script", size: "2.2 MB" },
-        { name: "Module 6 - Data Use Cycle Script", size: "2.7 MB" },
+        { name: "Module 6 - CSV Export & Import Script", size: "2.4 MB" },
+        { name: "Module 7 - RDQA Methodology Script", size: "3.1 MB" },
       ],
     },
     {
@@ -25,6 +26,7 @@ const Resources = () => {
         { name: "Aggregation Process Checklist", size: "620 KB" },
         { name: "Data Quality Checklist", size: "740 KB" },
         { name: "Dashboard Design Checklist", size: "690 KB" },
+        { name: "RDQA Assessor Checklist", size: "920 KB" },
         { name: "Data Use Decision Framework", size: "1.1 MB" },
       ],
     },
@@ -36,6 +38,8 @@ const Resources = () => {
         { name: "Data Visualizer Complete Guide", size: "3.8 MB" },
         { name: "Dashboard Best Practices", size: "2.9 MB" },
         { name: "CSV Export & Import Guide", size: "2.2 MB" },
+        { name: "RDQA User Guide & Methodology", size: "4.8 MB" },
+        { name: "RDQA Action Plan Templates", size: "1.5 MB" },
       ],
     },
     {

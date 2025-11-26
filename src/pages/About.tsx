@@ -31,14 +31,11 @@ const About = () => {
   ];
 
   const outcomes = [
-    "Navigate DHIS2 interface with confidence",
-    "Enter and manage both tracker and aggregate data accurately",
-    "Create meaningful visualizations and dashboards",
-    "Export and import data between DHIS2 systems",
-    "Apply data quality principles",
+    "Navigate and export data between DHIS2 systems",
+    "Conduct routine data quality assessments (RDQA)",
+    "Develop data improvement action plans",
+    "Apply data quality principles in daily work",
     "Use data for evidence-based decision making",
-    "Troubleshoot common data issues",
-    "Share insights effectively with stakeholders",
   ];
 
   return (

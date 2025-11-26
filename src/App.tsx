@@ -12,6 +12,7 @@ import Module3 from "./pages/Module3";
 import Module4 from "./pages/Module4";
 import Module5 from "./pages/Module5";
 import Module6 from "./pages/Module6";
+import Module7 from "./pages/Module7";
 import Resources from "./pages/Resources";
 import Help from "./pages/Help";
 import Assessment from "./pages/Assessment";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/modules/4" element={<Module4 />} />
           <Route path="/modules/5" element={<Module5 />} />
           <Route path="/modules/6" element={<Module6 />} />
+          <Route path="/modules/7" element={<Module7 />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/help" element={<Help />} />
           <Route path="/assessment" element={<Assessment />} />

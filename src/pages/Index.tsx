@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import ModuleCard from "@/components/ModuleCard";
 import Header from "@/components/Header";
-import { BookOpen, Users, TrendingUp, Target, Database, BarChart3, Layout, GitBranch, Repeat, FileSpreadsheet } from "lucide-react";
+import { BookOpen, Users, TrendingUp, Target, Database, BarChart3, Layout, GitBranch, Repeat, FileSpreadsheet, ClipboardCheck } from "lucide-react";
 import VideoEmbed from "@/components/VideoEmbed";
 
 const Index = () => {
@@ -56,6 +56,14 @@ const Index = () => {
       icon: FileSpreadsheet,
       duration: "45 min",
       href: "/modules/6",
+    },
+    {
+      number: 7,
+      title: "RDQA: Routine Data Quality Assessment",
+      description: "Verify data accuracy, assess systems, and develop improvement plans",
+      icon: ClipboardCheck,
+      duration: "60 min",
+      href: "/modules/7",
     },
   ];
 
