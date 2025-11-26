@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, BookOpen } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
+import ippfLogo from "@/assets/ippf-logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,11 +21,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b-4 border-primary bg-coco backdrop-blur">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-          <div className="flex items-center justify-center w-12 h-12 rounded-sm bg-primary shadow-lg">
-            <BookOpen className="h-7 w-7 text-primary-foreground" />
-          </div>
+          <img src={ippfLogo} alt="IPPF Logo" className="h-12 w-auto" />
           <div className="flex flex-col">
-            <span className="font-heading font-bold text-xl leading-none text-coco-foreground tracking-tight">IPPF DHIS2</span>
+            <span className="font-heading font-bold text-xl leading-none text-coco-foreground tracking-tight">DHIS2</span>
             <span className="text-xs text-meteorite font-semibold tracking-wide">Training Platform</span>
           </div>
         </Link>
