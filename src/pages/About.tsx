@@ -34,7 +34,7 @@ const About = () => {
     "Navigate DHIS2 interface with confidence",
     "Enter and manage both tracker and aggregate data accurately",
     "Create meaningful visualizations and dashboards",
-    "Understand the complete health information cycle",
+    "Export and import data between DHIS2 systems",
     "Apply data quality principles",
     "Use data for evidence-based decision making",
     "Troubleshoot common data issues",

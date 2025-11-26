@@ -66,12 +66,12 @@ const Assessment = () => {
       correctAnswer: 2,
     },
     {
-      question: "What completes the health information cycle?",
+      question: "What is the primary purpose of CSV export in DHIS2?",
       options: [
-        "Entering data into DHIS2",
-        "Creating beautiful charts",
-        "Taking action based on data insights",
-        "Printing monthly reports",
+        "To delete old data",
+        "To create colorful dashboards",
+        "For national reporting and global data consolidation",
+        "To change user passwords",
       ],
       correctAnswer: 2,
     },

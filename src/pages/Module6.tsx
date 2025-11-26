@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { Download, CheckCircle2, Target, BookOpen } from "lucide-react";
+import { Download, Upload, CheckCircle2, Target, BookOpen, FileSpreadsheet, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Module6 = () => {
   const objectives = [
-    "Understand the complete health information cycle",
-    "Interpret dashboard data for decision making",
-    "Identify data quality issues",
-    "Apply data use principles in program management",
-    "Communicate insights to stakeholders effectively",
+    "Export service data from DHIS2 as a CSV file",
+    "Navigate the Reports and Standard Reports sections",
+    "Import CSV files into the Global DHIS2 system",
+    "Configure correct format and ID schemes (Code / UID)",
+    "Understand when and why CSV export is needed for reporting",
   ];
 
   return (
@@ -28,10 +28,10 @@ const Module6 = () => {
             <Badge variant="secondary">55 minutes</Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold">
-            Health Information Cycle & Data Use
+            CSV Export & Import to Global DHIS2
           </h1>
           <p className="text-lg text-muted-foreground">
-            Interpret dashboards, ensure data quality, complete the health information cycle, and drive evidence-based decisions
+            Learn how to export service data from DHIS2 into CSV format and import it into the Global DHIS2 system for national-level reporting and global consolidation
           </p>
         </div>
 
@@ -56,7 +56,7 @@ const Module6 = () => {
 
         <section className="mb-12">
           <h2 className="text-2xl font-heading font-bold mb-4">Introduction Video</h2>
-          <VideoEmbed title="Health Information Cycle Overview" placeholder />
+          <VideoEmbed title="CSV Export & Import Overview" placeholder />
         </section>
 
         <section className="mb-12">
@@ -67,25 +67,25 @@ const Module6 = () => {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border-2 rounded-lg px-4">
               <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-                1. The Health Information Cycle
+                1. How to Export Data as CSV
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground space-y-3 pt-4">
                 <p>
-                  Data only has value when it leads to action. The health information cycle shows how data flows from collection 
-                  to decision-making and back to improved services.
+                  Exporting data from DHIS2 to CSV format is essential when you need to share large datasets 
+                  for national-level reporting, global consolidation, or external analysis.
                 </p>
-                <p className="font-semibold text-foreground">The Six Stages:</p>
+                <p className="font-semibold text-foreground">Step-by-Step Process:</p>
                 <ol className="list-decimal list-inside space-y-2 ml-2">
-                  <li><strong>Collection:</strong> Gather data from services and programs</li>
-                  <li><strong>Entry:</strong> Input data into DHIS2 accurately</li>
-                  <li><strong>Processing:</strong> Aggregate, validate, and clean data</li>
-                  <li><strong>Analysis:</strong> Create visualizations and identify patterns</li>
-                  <li><strong>Interpretation:</strong> Understand what data means</li>
-                  <li><strong>Action:</strong> Make decisions and improve programs</li>
+                  <li><strong>Go to Reports:</strong> Navigate to the Reports module in the main menu</li>
+                  <li><strong>Open Standard Reports:</strong> Select "Standard Reports" from the submenu</li>
+                  <li><strong>Select CSV Export to Global IPPF:</strong> Choose the CSV export option designed for global reporting</li>
+                  <li><strong>Choose the year:</strong> Select the reporting period (year) for which you want to export data</li>
+                  <li><strong>Select organisation unit group:</strong> Choose the facilities or regions to include in the export</li>
+                  <li><strong>Download the CSV file:</strong> Click the download button and save the file to your computer</li>
                 </ol>
                 <div className="p-4 bg-info/10 border border-info/20 rounded-lg mt-4">
                   <p className="text-sm text-foreground">
-                    <strong>Key Principle:</strong> The cycle is only complete when data leads to action that improves health outcomes.
+                    <strong>Important:</strong> CSV files contain raw data in a standardized format that can be opened in Excel, imported into databases, or uploaded to other DHIS2 instances.
                   </p>
                 </div>
               </AccordionContent>
@@ -93,80 +93,70 @@ const Module6 = () => {
 
             <AccordionItem value="item-2" className="border-2 rounded-lg px-4">
               <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-                2. Interpreting Dashboard Data
+                2. How to Import CSV into Global DHIS2
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground space-y-3 pt-4">
-                <p className="font-semibold text-foreground">Ask Critical Questions:</p>
-                <ul className="list-disc list-inside space-y-2 ml-2">
-                  <li>What trends do I see? Are numbers increasing or decreasing?</li>
-                  <li>Are there unexpected spikes or drops?</li>
-                  <li>How do we compare to targets or previous periods?</li>
-                  <li>Which facilities perform well? Which need support?</li>
-                  <li>Are there gaps in service coverage?</li>
-                </ul>
-                <p className="mt-4">
-                  <strong className="text-foreground">Ananya's Analysis:</strong> She notices contraceptive uptake dropped 15% 
-                  in one district. Investigation reveals a supply chain issue that needs immediate attention.
+                <p>
+                  Once you have your CSV file, you need to import it into the Global DHIS2 system to contribute 
+                  your country data to the global database.
                 </p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="border-2 rounded-lg px-4">
-              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-                3. Ensuring Data Quality
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground space-y-3 pt-4">
-                <p>Poor quality data leads to poor decisions. Always check for:</p>
-                <ul className="list-disc list-inside space-y-2 ml-2">
-                  <li><strong>Completeness:</strong> Are all facilities reporting?</li>
-                  <li><strong>Timeliness:</strong> Is data submitted on schedule?</li>
-                  <li><strong>Accuracy:</strong> Do numbers make sense? Any outliers?</li>
-                  <li><strong>Consistency:</strong> Do related indicators align?</li>
-                  <li><strong>Validity:</strong> Do values fall within expected ranges?</li>
-                </ul>
-                <p className="mt-4">Run regular data quality checks and address issues promptly.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="border-2 rounded-lg px-4">
-              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-                4. Data-Driven Decision Making
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground space-y-3 pt-4">
-                <p className="font-semibold text-foreground">Using Data for Action:</p>
-                <ul className="list-disc list-inside space-y-2 ml-2">
-                  <li>Identify underperforming areas needing support</li>
-                  <li>Allocate resources based on service demand</li>
-                  <li>Monitor program impact and effectiveness</li>
-                  <li>Adjust strategies based on evidence</li>
-                  <li>Report progress to donors and stakeholders</li>
-                </ul>
+                <p className="font-semibold text-foreground">Import Process:</p>
+                <ol className="list-decimal list-inside space-y-2 ml-2">
+                  <li><strong>Open the Export/Import module:</strong> Navigate to Import/Export in the main menu</li>
+                  <li><strong>Select Data Import:</strong> Choose the "Data Import" option from the submenu</li>
+                  <li><strong>Upload the CSV file:</strong> Click "Choose file" and select your downloaded CSV</li>
+                  <li><strong>Choose the correct format:</strong> Select "CSV" as the file format</li>
+                  <li><strong>Set ID schemes:</strong> Choose "Code" or "UID" depending on your system configuration (typically "Code" for IPPF)</li>
+                  <li><strong>Run the import:</strong> Click "Import" and wait for the process to complete</li>
+                  <li><strong>Verify import success:</strong> Check the import summary to ensure all records were processed correctly</li>
+                </ol>
                 <div className="p-4 bg-success/10 border border-success/20 rounded-lg mt-4">
                   <p className="text-sm text-foreground">
-                    <strong>Success Story:</strong> Regular dashboard reviews led to redistributing staff from low-demand 
-                    facilities to high-demand ones, improving overall service coverage by 23%.
+                    <strong>Pro Tip:</strong> Always review the import summary report. It will show you how many records were imported successfully and flag any errors that need attention.
                   </p>
                 </div>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border-2 rounded-lg px-4">
+            <AccordionItem value="item-3" className="border-2 rounded-lg px-4">
               <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-                5. Communicating Insights
+                3. When and Why CSV Export is Needed
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground space-y-3 pt-4">
-                <p>Data insights must be communicated effectively to drive action:</p>
+                <p>Understanding when to use CSV export and import helps you choose the right data sharing method for each situation.</p>
+                <p className="font-semibold text-foreground">Common Use Cases:</p>
                 <ul className="list-disc list-inside space-y-2 ml-2">
-                  <li><strong>Know your audience:</strong> Tailor message to decision-makers</li>
-                  <li><strong>Tell a story:</strong> Use data to create a narrative</li>
-                  <li><strong>Highlight key points:</strong> Focus on what matters most</li>
-                  <li><strong>Recommend actions:</strong> Don't just present data, suggest solutions</li>
-                  <li><strong>Use visuals:</strong> Charts speak louder than tables</li>
+                  <li><strong>National-level reporting:</strong> Consolidate data from multiple facilities or regions for government reporting requirements</li>
+                  <li><strong>Global data consolidation:</strong> Share country-level data with IPPF's Global DHIS2 system for international reporting and analysis</li>
+                  <li><strong>Sharing with external teams:</strong> Provide data to partners, donors, or research teams who need access to raw data</li>
+                  <li><strong>Advanced analysis in Excel:</strong> Export data for custom analysis, calculations, or visualizations not available in DHIS2</li>
+                  <li><strong>Data backup and archiving:</strong> Create offline copies of important datasets for record-keeping</li>
+                  <li><strong>System migration:</strong> Transfer data between different DHIS2 instances during system upgrades or consolidations</li>
                 </ul>
+                <div className="p-4 bg-warning/10 border border-warning/20 rounded-lg mt-4">
+                  <p className="text-sm text-foreground">
+                    <strong>Data Privacy Note:</strong> CSV files contain raw data. Always ensure you have proper authorization before exporting and sharing sensitive health information.
+                  </p>
+                </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </section>
+
+        <Card className="mb-8 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-accent/5">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 font-heading">
+              <AlertCircle className="h-5 w-5 text-primary" />
+              Key Takeaway
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-foreground font-medium">
+              Module 6 helps you move data from the country system to the global system in a clean, standardised CSV format — 
+              ensuring that local insights become part of global reporting.
+            </p>
+          </CardContent>
+        </Card>
 
         <Card className="mb-12 border-2">
           <CardHeader>
@@ -178,15 +168,15 @@ const Module6 = () => {
           <CardContent>
             <div className="space-y-3">
               <Button variant="outline" className="w-full justify-between">
-                <span>Module 6 Script - Data Use Cycle</span>
+                <span>Module 6 Script - CSV Export & Import Guide</span>
                 <Download className="h-4 w-4" />
               </Button>
               <Button variant="outline" className="w-full justify-between">
-                <span>Data Quality Assessment Tool</span>
+                <span>CSV Format Template</span>
                 <Download className="h-4 w-4" />
               </Button>
               <Button variant="outline" className="w-full justify-between">
-                <span>Decision-Making Framework</span>
+                <span>ID Scheme Reference Guide</span>
                 <Download className="h-4 w-4" />
               </Button>
             </div>
@@ -197,27 +187,39 @@ const Module6 = () => {
           <h2 className="text-2xl font-heading font-bold mb-6">Knowledge Check</h2>
           <div className="space-y-6">
             <QuizQuestion
-              question="What completes the health information cycle?"
+              question="What is the first step to export data from DHIS2 as CSV?"
               options={[
-                "Entering data into DHIS2",
-                "Creating a beautiful dashboard",
-                "Taking action based on data insights",
-                "Printing monthly reports",
+                "Open the dashboard",
+                "Go to Reports and select Standard Reports",
+                "Upload a file",
+                "Run data validation",
               ]}
-              correctAnswer={2}
-              explanation="The health information cycle is only complete when data leads to action that improves health programs and outcomes."
+              correctAnswer={1}
+              explanation="To export data as CSV, you must first navigate to Reports, then open Standard Reports, and select the CSV Export option."
             />
             
             <QuizQuestion
-              question="Which is NOT a key dimension of data quality?"
+              question="Which ID scheme is typically used for IPPF CSV imports?"
               options={[
-                "Completeness",
-                "Timeliness",
-                "Dashboard color scheme",
-                "Accuracy",
+                "Name",
+                "Code",
+                "Random ID",
+                "Email address",
               ]}
-              correctAnswer={2}
-              explanation="Data quality focuses on completeness, timeliness, accuracy, consistency, and validity - not visual design elements."
+              correctAnswer={1}
+              explanation="IPPF typically uses 'Code' as the ID scheme for CSV imports to ensure consistent data mapping across systems."
+            />
+
+            <QuizQuestion
+              question="Why would you export data to CSV format?"
+              options={[
+                "To make dashboards colorful",
+                "For national reporting and global data consolidation",
+                "To delete old records",
+                "To change user permissions",
+              ]}
+              correctAnswer={1}
+              explanation="CSV export is used for national-level reporting, global consolidation, sharing data with external teams, and advanced analysis."
             />
           </div>
         </section>

@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import ModuleCard from "@/components/ModuleCard";
-import { Database, Repeat, GitBranch, BarChart3, Layout, Activity } from "lucide-react";
+import { Database, Repeat, GitBranch, BarChart3, Layout, FileSpreadsheet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -48,10 +48,10 @@ const Modules = () => {
     },
     {
       number: 6,
-      title: "Health Information Cycle & Data Use",
-      description: "Interpret dashboards, ensure data quality, complete the health information cycle, and drive evidence-based decisions",
-      icon: Activity,
-      duration: "55 min",
+      title: "CSV Export & Import to Global DHIS2",
+      description: "Export service data as CSV and import into Global DHIS2 for national-level reporting and global data consolidation",
+      icon: FileSpreadsheet,
+      duration: "45 min",
       href: "/modules/6",
     },
   ];
