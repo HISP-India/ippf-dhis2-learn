@@ -39,6 +39,18 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        coco: {
+          DEFAULT: "hsl(var(--coco))",
+          foreground: "hsl(var(--coco-foreground))",
+        },
+        dream: {
+          DEFAULT: "hsl(var(--dream))",
+          foreground: "hsl(var(--dream-foreground))",
+        },
+        meteorite: {
+          DEFAULT: "hsl(var(--meteorite))",
+          foreground: "hsl(var(--meteorite-foreground))",
+        },
         success: {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
@@ -127,8 +139,8 @@ export default {
         "scale-in": "scale-in 0.3s ease-out",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        heading: ["Poppins", "system-ui", "sans-serif"],
+        sans: ["Barlow", "system-ui", "sans-serif"],
+        heading: ["Barlow Semi Condensed", "system-ui", "sans-serif"],
       },
     },
   },
