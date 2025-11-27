@@ -125,7 +125,7 @@ const Index = () => {
               <div className="relative">
                 <VideoEmbed 
                   title="DHIS2 Training Introduction" 
-                  placeholder={true}
+                  videoId="1EkZULRLZyM"
                 />
               </div>
             </div>
