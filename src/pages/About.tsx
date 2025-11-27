@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Video, Award, User } from "lucide-react";
+import ananyaImage from "@/assets/ananya.jpeg";
 
 const About = () => {
   const audience = [
@@ -145,9 +146,11 @@ const About = () => {
             <CardContent>
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <User className="h-16 w-16 text-primary-foreground" />
-                  </div>
+                  <img 
+                    src={ananyaImage} 
+                    alt="Ananya - Health Data Officer" 
+                    className="w-40 h-auto rounded-2xl shadow-lg"
+                  />
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
