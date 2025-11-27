@@ -59,7 +59,7 @@ const Module1 = () => {
         {/* Video Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-heading font-bold mb-4">Introduction Video</h2>
-          <VideoEmbed title="Tracker Data Entry" videoId="4_1QL5onsGY" />
+          <VideoEmbed title="Tracker Data Entry" videoId="9nNWU5PKRzE" />
         </section>
 
         {/* Lesson Content */}
