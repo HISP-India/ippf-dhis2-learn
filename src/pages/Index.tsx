@@ -16,6 +16,7 @@ const Index = () => {
       icon: Database,
       duration: "45 min",
       href: "/modules/1",
+      disabled: false,
     },
     {
       number: 2,
@@ -24,6 +25,7 @@ const Index = () => {
       icon: Repeat,
       duration: "30 min",
       href: "/modules/2",
+      disabled: true,
     },
     {
       number: 3,
@@ -32,6 +34,7 @@ const Index = () => {
       icon: GitBranch,
       duration: "40 min",
       href: "/modules/3",
+      disabled: true,
     },
     {
       number: 4,
@@ -40,6 +43,7 @@ const Index = () => {
       icon: BarChart3,
       duration: "50 min",
       href: "/modules/4",
+      disabled: true,
     },
     {
       number: 5,
@@ -48,6 +52,7 @@ const Index = () => {
       icon: Layout,
       duration: "45 min",
       href: "/modules/5",
+      disabled: true,
     },
     {
       number: 6,
@@ -56,6 +61,7 @@ const Index = () => {
       icon: FileSpreadsheet,
       duration: "45 min",
       href: "/modules/6",
+      disabled: true,
     },
     {
       number: 7,
@@ -64,6 +70,7 @@ const Index = () => {
       icon: ClipboardCheck,
       duration: "60 min",
       href: "/modules/7",
+      disabled: true,
     },
   ];
 
