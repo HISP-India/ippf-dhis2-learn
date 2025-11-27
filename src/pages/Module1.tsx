@@ -59,7 +59,7 @@ const Module1 = () => {
         {/* Video Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-heading font-bold mb-4">Introduction Video</h2>
-          <VideoEmbed title="Tracker Data Entry Overview" placeholder />
+          <VideoEmbed title="Tracker Data Entry" videoId="4_1QL5onsGY" />
         </section>
 
         {/* Lesson Content */}
@@ -98,6 +98,9 @@ const Module1 = () => {
                 2. Registering a New Client
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground space-y-3 pt-4">
+                <div className="mb-4">
+                  <VideoEmbed title="Register a New Client" videoId="tQNzn9ksVk8" />
+                </div>
                 <p className="font-semibold text-foreground">Step-by-Step Process:</p>
                 <ol className="list-decimal list-inside space-y-2 ml-2">
                   <li>Navigate to the Tracker Capture app from the DHIS2 main menu</li>
@@ -179,6 +182,9 @@ const Module1 = () => {
                 5. Searching for Clients
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground space-y-3 pt-4">
+                <div className="mb-4">
+                  <VideoEmbed title="Logging and Searching for an Existing Client" videoId="_T3WKaRYhyg" />
+                </div>
                 <p>
                   When a client returns for follow-up, you need to quickly find their record. DHIS2 provides multiple search options.
                 </p>
